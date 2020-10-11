@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  height: 100vh;
+  line-height: 1.6;
+  overflow: hidden;
+
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  /* CSS Smooth Scroll */
+  overflow-y: scroll; 
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.lead {
+  font-size: 1.5rem;
+  position: relative;
+  top: 200px;
+  font-size: 50px;
+  line-height: 1.35;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(0,0,0,0.7);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: lowercase;
+  color: #f4f4f4;
+  font-size: 18px;
+}
+
+.navbar ul li a:hover {
+  color: skyblue;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+ 
+  /* Scroll Snap */
+  scroll-snap-align: center;
+}
+
+section h1 {
+  font-size: 4rem;
+}
+
+/* Section Images */
+section#home {
+  background: url("PAGE_1_BACK\ \(1\).jpg") no-repeat center center/cover;;
+}
+
+section#about {
+  background: url("PAGE_2_BACK\ \(1\).jpg") no-repeat center center/cover;;
+}
+
+section#service {
+  background: url("PAGE_3_BACK\ \(1\).jpg") no-repeat center center/cover;;
+}
+
+
+/* Logo */
+
+.logo{
+  position: absolute;
+  left: 30px;
+  top: 5px;
+  width: 140px;
+  height: 50px;
+}
+
+.logo_2{
+  width: 500px;
+}
+
+.logo_3{
+  width: 300px;
+  position: relative;
+  right: 30px;
+}
+
+
+/* Welcome */
+
+
+/* About */
+
+.contain{
+  display: flex;
+}
+
+.text h2{
+  text-align: left;
+  padding: 10px 0px;
+  font-size: 30px;
+}
+.text p{
+  text-align: left;
+}
+
+.text{
+  position: relative;
+  left: 75px;
+  bottom: 20px;
+}
+
+.text img{
+  position: relative;
+}
+
+.gui_interface img{
+  border-radius: 10px;
+}
+
+/* Button */
+
+.download{
+  height: 50px;
+  width: 200px;
+  background-color: #0072FF;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50px;
+  color: white;
+}
+
+.download_nav{
+  height: 30px; 
+  width: 120px; 
+  background-color: #0072FF;
+  font-size: 18px;
+  outline: none;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+::-webkit-scrollbar-track{
+  border: 7px soild#0088a9 ;
+
+} 
+
+::-webkit-scrollbar-thumb{
+  background:#0088a9 ;
+  border-radius: 100px;
+
+} 
+
+div::-webkit-scrollbar {
+  display: none;
+}
+
+/* Fill Text */
+
+a.effect-shine:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 900px) {
+  .lead {
+    font-size: 1.5rem;
+    position: relative;
+    top: 150px;
+    font-size: 45px;
+    padding: 0 1rem;
+  }
+} 
+
+@media only screen and (max-width: 700px) {
+  .logo{
+    display: none;
+  }
+  .navbar ul {
+    justify-content: center;
+  }
+  .gui_interface img{
+    display: none;
+  }  
+  .text{
+    margin: 0 auto 0 auto;
+    position: static;
+  }
+  div::-webkit-scrollbar {
+    display: none;
+  }
+  .navbar ul li a {
+    font-size: 16px;
+  }
+  .download_nav{
+    height: 25px; 
+    width: 85px; 
+    background-color: #0072FF;
+    font-size: 16px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .logo_2{
+    width: 400px;
+  }
+  .lead {
+    font-size: 1.5rem;
+    position: relative;
+    top: 150px;
+    font-size: 40px;
+    padding: 0 1rem;
+  }
+}
