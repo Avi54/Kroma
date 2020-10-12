@@ -24,8 +24,6 @@ body {
 
 .lead {
   font-size: 1.5rem;
-  position: relative;
-  top: 200px;
   font-size: 50px;
   line-height: 1.35;
 }
@@ -54,7 +52,6 @@ body {
 
 .navbar ul li a {
   text-decoration: none;
-  text-transform: lowercase;
   color: #f4f4f4;
   font-size: 18px;
 }
@@ -82,7 +79,7 @@ section h1 {
 
 /* Section Images */
 section#home {
-  background: url("PAGE_1_BACK\ \(1\).jpg") no-repeat center center/cover;;
+  background: url("PAGE_3_BACK\ \(1\).jpg") no-repeat center center/cover;;
 }
 
 section#about {
@@ -90,7 +87,7 @@ section#about {
 }
 
 section#service {
-  background: url("PAGE_3_BACK\ \(1\).jpg") no-repeat center center/cover;;
+  background: url("PAGE_1_BACK\ \(3\).jpg") no-repeat center center/cover;;
 }
 
 
@@ -110,8 +107,9 @@ section#service {
 
 .logo_3{
   width: 300px;
-  position: relative;
-  right: 30px;
+  position: fixed;
+  right: 90px;
+  bottom: 30px;
 }
 
 
@@ -122,6 +120,7 @@ section#service {
 
 .contain{
   display: flex;
+  margin: 1rem;
 }
 
 .text h2{
@@ -190,9 +189,17 @@ section#service {
 
 } 
 
+.moveup{
+  position: relative;
+  bottom: 50px;
+}
+
+
+/* 
 div::-webkit-scrollbar {
   display: none;
 }
+*/
 
 /* Fill Text */
 
@@ -217,12 +224,59 @@ a.effect-shine:hover {
 @media only screen and (max-width: 900px) {
   .lead {
     font-size: 1.5rem;
-    position: relative;
-    top: 150px;
     font-size: 45px;
     padding: 0 1rem;
   }
 } 
+
+@media only screen and (max-width: 1136px) {
+  .logo{
+    display: none;
+  }
+  .navbar ul {
+    justify-content: center;
+  }
+  .gui_interface img{
+    display: none;
+  }  
+  .text{
+    margin: 0 auto 0 auto;
+    position: static;
+  }
+  div::-webkit-scrollbar {
+    display: none;
+  }
+  .navbar ul li a {
+    font-size: 16px;
+  }
+  .download_nav{
+    height: 25px; 
+    width: 85px; 
+    background-color: #0072FF;
+    font-size: 16px;
+    outline: none;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .logo_2{
+    width: 400px;
+  }
+  .lead {
+    font-size: 1.5rem;
+    font-size: 40px;
+    padding: 0 1rem;
+  }
+}
+@media only screen and (max-width: 496px) {
+  .text h2{
+    font-size: 24px;
+  }
+  .logo_3{
+    width: 200px;
+  }
+}
 
 @media only screen and (max-width: 700px) {
   .logo{
@@ -250,7 +304,7 @@ a.effect-shine:hover {
     background-color: #0072FF;
     font-size: 16px;
     outline: none;
-    border-radius: 10px;
+    border-radius: 25px;
     border: none;
     color: white;
     cursor: pointer;
@@ -260,9 +314,140 @@ a.effect-shine:hover {
   }
   .lead {
     font-size: 1.5rem;
-    position: relative;
-    top: 150px;
     font-size: 40px;
     padding: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 442px) {
+  .navbar ul li a {
+    font-size: 15px;
+  }
+  .download_nav{
+    height: 25px; 
+    width: 85px; 
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 432px) {
+  .navbar ul li a {
+    font-size: 14px;
+  }
+  .download_nav{
+    height: 25px; 
+    width: 85px; 
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .navbar ul li a {
+    font-size: 12px;
+    position: relative;
+    bottom: 5px;
+  }
+  .download_nav{
+    height: 20px; 
+    width: 68px; 
+    font-size: 12px;
+  }
+  .navbar{
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .navbar ul li a {
+    font-size: 13px;
+    position: relative;
+    bottom: 5px;
+  }
+  .download_nav{
+    height: 22px; 
+    width: 70px; 
+    font-size: 13px;
+  }
+  .navbar{
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 397px) {
+  .navbar ul li a {
+    font-size: 12px;
+    position: relative;
+    bottom: 5px;
+  }
+  .download_nav{
+    height: 20px; 
+    width: 60px; 
+    font-size: 12px;
+  }
+  .navbar{
+    height: 50px;
+  }
+}
+
+
+@media only screen and (max-width: 376px) {
+  .navbar ul li a {
+    font-size: 11px;
+    position: relative;
+    bottom: 5px;
+  }
+  .download_nav{
+    height: 20px; 
+    width: 60px; 
+    font-size: 11px;
+  }
+  .navbar{
+    height: 50px;
+  }
+  .text h2{
+    font-size: 22px;
+  }
+  .logo_3{
+    width: 160px;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 366px) {
+  .navbar ul li a {
+    font-size: 11px;
+    position: relative;
+    bottom: 5px;
+  }
+  .download_nav{
+    height: 20px; 
+    width: 58px; 
+    font-size: 11px;
+  }
+  .navbar{
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 361px) {
+  .navbar ul li a {
+    font-size: 10.25px;
+    position: relative;
+    bottom: 5px;
+  }
+  .download_nav{
+    height: 20px; 
+    width: 55px; 
+    font-size: 10.25px;
+  }
+  .navbar{
+    height: 50px;
+  }
+  .text h2{
+    font-size: 20px;
+  }
+  .logo_3{
+    width: 130px;
+    margin-top: 10px;
   }
 }
