@@ -221,7 +221,6 @@ a.effect-shine:hover {
 
 /* Responsive */
 
-
 @media only screen and (max-width: 900px) {
   .lead {
     font-size: 1.5rem;
@@ -252,7 +251,7 @@ a.effect-shine:hover {
   }
   .download_nav{
     height: 25px; 
-    width: 110px; 
+    width: 85px; 
     background-color: #0072FF;
     font-size: 16px;
     outline: none;
@@ -301,7 +300,7 @@ a.effect-shine:hover {
   }
   .download_nav{
     height: 25px; 
-    width: 110px; 
+    width: 85px; 
     background-color: #0072FF;
     font-size: 16px;
     outline: none;
@@ -320,29 +319,6 @@ a.effect-shine:hover {
   }
 }
 
-
-@media only screen and (max-width: 477px) {
-  .w{
-    display: none;
-  }
-  .w2{
-    display: none;
-    position: relative;
-  }
-  .imp{
-    display: visible;
-    position: relative;
-    left: 50px;
-  }
-  .logo{
-    display: block;
-    left: 20px auto;
-    top: 20px auto;
-  }
-}
-
-/*
-
 @media only screen and (max-width: 442px) {
   .navbar ul li a {
     font-size: 15px;
@@ -353,9 +329,6 @@ a.effect-shine:hover {
     font-size: 15px;
   }
 }
-*/
-
-
 
 @media only screen and (max-width: 432px) {
   .navbar ul li a {
@@ -365,11 +338,6 @@ a.effect-shine:hover {
     height: 25px; 
     width: 85px; 
     font-size: 14px;
-  }
-  .logo{
-    display: block;
-    left: 20px auto;
-    top: 20px auto;
   }
 }
 
@@ -381,11 +349,15 @@ a.effect-shine:hover {
   }
   .download_nav{
     height: 20px; 
-    width: 90px; 
+    width: 68px; 
     font-size: 12px;
   }
   .navbar{
     height: 50px;
+  }
+  .logo_3{
+    width: 185px;
+    margin-top: 10px;
   }
 }
 
@@ -397,15 +369,13 @@ a.effect-shine:hover {
   }
   .download_nav{
     height: 22px; 
-    width: 90px; 
+    width: 70px; 
     font-size: 13px;
   }
   .navbar{
     height: 50px;
   }
 }
-
-/*
 
 @media only screen and (max-width: 397px) {
   .navbar ul li a {
@@ -423,21 +393,30 @@ a.effect-shine:hover {
   }
 }
 
-*/
 
 @media only screen and (max-width: 376px) {
-  .logo_3{
-    width: 160px;
-    margin-top: 5px;
+  .navbar ul li a {
+    font-size: 11px;
+    position: relative;
+    bottom: 5px;
   }
   .download_nav{
     height: 20px; 
-    width: 90px; 
-    font-size: 12px;
+    width: 60px; 
+    font-size: 11px;
+  }
+  .navbar{
+    height: 50px;
+  }
+  .text h2{
+    font-size: 22px;
+  }
+  .logo_3{
+    width: 150px;
+    margin-top: 10px;
   }
 }
 
-/*
 @media only screen and (max-width: 366px) {
   .navbar ul li a {
     font-size: 11px;
@@ -453,15 +432,26 @@ a.effect-shine:hover {
     height: 50px;
   }
 }
-*/
-
-
-
 
 @media only screen and (max-width: 361px) {
+  .navbar ul li a {
+    font-size: 10.25px;
+    position: relative;
+    bottom: 5px;
+  }
+  .download_nav{
+    height: 20px; 
+    width: 55px; 
+    font-size: 10.25px;
+  }
+  .navbar{
+    height: 50px;
+  }
+  .text h2{
+    font-size: 20px;
+  }
   .logo_3{
-    width: 130px;
-    margin-top: 10px;
+    width: 120px;
+    margin-top: 12px;
   }
 }
-
