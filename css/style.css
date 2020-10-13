@@ -142,7 +142,8 @@
     font-size: 20px;
     border-radius: 50px;
     color: white;
-    margin-top: 20px;
+    margin-top: 85px;
+    margin-left: 200px;
   }
   
   .download_nav{
@@ -181,20 +182,13 @@
     height: 400px;
   }
 
-  .dot{
-    position: relative;
-    top: 10px;
-  }
+
 
   .bigboy{
     display: flex;
   }
 
-  .btn_download{
-    margin-top: 50px;
-    margin-left: 200px;
-  }
-
+ 
 
 /* Slideshow container */
 .slideshow-container {
@@ -224,15 +218,7 @@
 }
 
 /* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
+
 
 .active {
   background-color: #717171;
@@ -303,9 +289,7 @@
     .lef-sec{
       display: none;
     }
-    .btn_download{
-      margin-top: 0px;
-    }
+
   
 }
 
@@ -324,10 +308,7 @@
       display: block;
       width: 400px;
   }
- 
-  .btn_download{
-    margin-top: 0px;  }
-    
+     
     div::-webkit-scrollbar {
       display: none;
   }
