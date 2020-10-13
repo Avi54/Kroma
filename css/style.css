@@ -192,6 +192,7 @@
 
   .btn_download{
     margin-top: 50px;
+    margin-left: 200px;
   }
 
 
@@ -299,7 +300,7 @@
         display: block;
         width: 500px;
     }
-    .big_1{
+    .lef-sec{
       display: none;
     }
     .btn_download{
@@ -307,6 +308,31 @@
     }
   
 }
+
+@media only screen and (max-width: 524px) {
+  .one{
+      display: none;
+  }
+  .two{
+      display: block;
+      width: 400px;
+  }
+  .three{
+      display: none;
+  }
+  .four{
+      display: block;
+      width: 400px;
+  }
+ 
+  .btn_download{
+    margin-top: 0px;  }
+    
+    div::-webkit-scrollbar {
+      display: none;
+  }
+}
+
 
 @media only screen and (max-width: 724px) {
     .logo{
@@ -317,6 +343,49 @@
     }  
 }
 
+@media only screen and (max-width: 482px) {
+  .one{
+      display: none;
+  }
+  .two{
+      display: block;
+      width: 300px;
+  }
+  .three{
+      display: none;
+  }
+  .four{
+      display: block;
+      width: 300px;
+  }
+  div::-webkit-scrollbar {
+      display: none;
+  }
+  .top{
+      display: none;
+  }
+
+  .mid{
+      display: none;
+  }
+  .logo{
+      display: inline-block;
+      margin: 0 auto 0 auto;
+  }
+
+  .logo_2{
+      width: 400px;
+  }
+}
+
+@media only screen and (max-width: 432px) {
+  .mySlides{
+    width: 300px;
+  }
+  .dot{
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 415px) {
     .one{
@@ -347,9 +416,11 @@
         display: inline-block;
         margin: 0 auto 0 auto;
     }
-    .mySlides img{
-        width: 250px;
-        height: 250px;
+    .mySlides{
+      width: 300px;
+    }
+    .dot{
+      display: none;
     }
     .logo_2{
         width: 400px;
@@ -385,11 +456,18 @@
         display: inline-block;
         margin: 0 auto 0 auto;
     }
-    .mySlides img{
-        width: 250px;
-        height: 250px;
+    .mySlides{
+      width: 300px;
+    }
+    .dot{
+      display: none;
     }
     .logo_2{
         width: 400px;
     }
 }
+
+.dot{
+  display: none;
+}
+
